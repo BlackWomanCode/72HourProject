@@ -3,6 +3,7 @@ import './App.css'; // This pattern is preferred where css for this component ha
 
 // A component import
 import Navbar from './components/Navbar'
+import Weather from './components/Weather'
 
 
 // Defining our <App /> component the function name matches the file name
@@ -12,6 +13,7 @@ function App() {
     <div className="App"> {/* Parent Element. Also we can't use the word class, so we use className in jsx*/}
       {/* Navbar is our imported component*/}
       <Navbar />
+      <Weather/>
     </div>
   );
 }
