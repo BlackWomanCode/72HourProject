@@ -11,7 +11,7 @@
 <br />
 
 # Requirements
-* The application must pull data from the NASA, Open Weather, and Zomato API's and present it to the DOM
+* The application must pull data from the NASA and Open Weather API's and present it to the DOM
 <br/>
 
 # Getting Started
