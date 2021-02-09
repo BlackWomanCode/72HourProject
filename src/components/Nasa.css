@@ -1,0 +1,7 @@
+.nasaImg {
+  height: 400px;
+  width: 300px;
+  margin: 2rem;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(32, 64, 123);
+}
