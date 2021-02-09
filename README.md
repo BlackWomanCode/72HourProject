@@ -1,18 +1,13 @@
-# Base Template
-Made with:
 
-```javascript
-npx create-react-app 
-// you won't run this now
-```
-<br />
-
-# Goal 
-1. Give Students a starting point with fewer files
-2. Comment out the files they are getting to aid learning...
-    *Files without comments have a brief description below.
-3. Make a starting place all the class can use for challenges/demos
-
+# Objective 
+1. Utilize team git, create a develop branch and sub-branches for project collaborators. 
+2. Grab the user's location upon running the application. 
+3. Using the location, use GET requests to fetch information from two APIs. 
+* NASA: https://api.nasa.gov/planetary/earth/imagery
+* Open Weather: https://openweathermap.org/current
+   * Based on your location, from the NASA Earth api grab a satellite image matching your location and the weather in your current location.
+   * Additionally, add a button that toggles between Fahrenheit and Centigrade when pulling from the weather api.
+   * Use Material UI, Reactstrap, or styled components to style out the project however your team decides. 
 <br />
 
 # Getting Started
