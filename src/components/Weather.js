@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
+import "./weather.css"; 
 // const lat = "39.9679389";
 // const long = "-86.12427819999999";
-
 const key = "d7ae70b412dfeecd253828278594b5e3";
 
 const Weather = () => {
@@ -73,38 +73,41 @@ const Weather = () => {
     
     
   return (
-    <div>
-        <div className="row mb-3">
-            <div className="col-12">
-                <img 
+    <div >
+        <h1>Current Local Weather</h1>
+        <div className="card-container">
+        <div className="card">
+                <img  className="card-img-top"
                 src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
-                alt="weather img"
-            />
-        </div>
-        <div className="col-12 text-justify">
-            <h2>
+                alt="weather img"/>
+            
+        
+<div className="card-body">
+            <h2 className="card-title"> 
                 {city}, {country}
             </h2>
-            <p>
+            <p className="card-text">
                 <b>Current condition:</b> '{description}'
             </p>
-            <p>
+            <p className="card-text">
                 <b> Temperature:</b>
                 {temperature} {degrees}
             </p>
-            <p>
+            <p className="card-text">
                 <b> Wind Speed:</b>
-                {wind}
+                {wind} mph
             </p>
-            <p>
-                <b> Clouds:</b>
-                {clouds}
+            <p className="card-text">
+                <b> Cloud Cover:</b>
+                {clouds}%
             </p>
-        </div>
-    </div>
-    <button className="btn btn-primary mb-2" onClick={handleClick}>
+            <button className="btn btn-primary mb-2" onClick={handleClick}>
         {button}
     </button>
+    </div>
+    </div>
+    </div>
+    
 </div> 
 
   );
